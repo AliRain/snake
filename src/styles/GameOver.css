@@ -1,0 +1,40 @@
+.label {
+  margin-bottom: 3px;
+}
+
+.grid-size-form {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.grid-size-form input {
+  width: 100px;
+  font-size: 24px;
+}
+
+.grid-size-form .x {
+  padding-top: 3px;
+}
+
+.speed {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.reset {
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: rgb(255, 255, 150);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.reset:active {
+  background-color: rgb(255, 255, 125);
+}

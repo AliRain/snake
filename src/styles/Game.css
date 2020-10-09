@@ -1,0 +1,23 @@
+.row:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.block {
+  background-color: rgb(175, 200, 255);
+  display: inline-block;
+  border-radius: 2px;
+  width: 25px;
+  height: 25px;
+}
+
+.block:not(:last-child) {
+  margin-right: 3px;
+}
+
+.snake {
+  background-color: rgb(200, 255, 175);
+}
+
+.fruit {
+  background-color: rgb(255, 175, 200);
+}
