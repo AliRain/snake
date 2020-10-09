@@ -119,7 +119,9 @@ class App extends React.Component<{}, IState> {
           break;
       }
 
-      if (!move) return this.setState({ gameOver: true }); //alert('dead');
+      if (containsTuple(location, coords)) move = false;
+
+      if (!move) return this.setState({ gameOver: true });
 
       this.move();
 
