@@ -59,21 +59,25 @@ class App extends React.Component<{}, IState> {
 
     switch (e.code) {
       case 'ArrowUp':
+      case 'KeyW':
         if (lastMovement === Direction.Left || lastMovement === Direction.Right)
           this.setState({ direction: Direction.Up });
         break;
 
       case 'ArrowDown':
+      case 'KeyS':
         if (lastMovement === Direction.Left || lastMovement === Direction.Right)
           this.setState({ direction: Direction.Down });
         break;
 
       case 'ArrowLeft':
+      case 'KeyA':
         if (lastMovement === Direction.Up || lastMovement === Direction.Down)
           this.setState({ direction: Direction.Left });
         break;
 
       case 'ArrowRight':
+      case 'KeyD':
         if (lastMovement === Direction.Up || lastMovement === Direction.Down)
           this.setState({ direction: Direction.Right });
         break;
